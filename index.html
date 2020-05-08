@@ -11,134 +11,193 @@
     <title>Hello, world!</title>
   </head>
   <body>
-     <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="navbar-collapse">
-        <div class="col-md-7 d-md-block d-sm-none">
-          <a class="navbar-brand col-md-5" href="#">Tel:00000000</a>
-          <a class="navbar-brand col-md-6" href="#">Բարի գալուստ մեր խանութ</a>
-        </div>
-        <form class="col-md-5">
-          <div class="form-row align-items-center">
-            <div class="col-md-4 col-sm-6 my-1">
-              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                  <option selected>AM</option>
-                  <option value="RU">RU</option>
-                  <option value="EN">EN</option>
+    <div class="container-lg">
+      <header>
+        <nav class="navbar navbar-light bg-light d-flex align-items-center">
+          <div class="row col-md-6 d-none d-sm-none d-md-flex justify-content-around align-items-md-center">
+            <p>Tel: 0000000000</p>
+            <p>Բարի գալուստ մեր խանութ</p>
+          </div>
+          <div class="row row2 col-12 col-md-6">
+            <div class="input-group mb-3 col-6 col-md-4">
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>AM</option>
+                <option value="1">RU</option>
+                <option value="2">EN</option>
               </select>
             </div>
-            <div class="col-md-4 col-sm-6 my-1">
-              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <div class="input-group mb-3 col-6 col-md-4">
+              <select class="custom-select" id="inputGroupSelect01">
                 <option selected>$</option>
-                <option value="RU">&euro;</option>
+                <option value="1">&#8364</option>
+                <option value="2">&#8383</option>
               </select>
             </div>
-            <div class="col-lg-4 m-auto d-md-block d-sm-none">
-              <button type="button" class="btn btn-info col-lg-12">
-                Wishlist <span class="badge badge-dark bg-danger">3</span>
-              </button>  
-            </div>          
-          </div>
-        </form>         
-      </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="navbar-collapse d-sm-flex">
-        <div class="col-md-6 col-sm-9">
-          <a class="navbar-brand" href="#">Խանութ</a>
-        </div>
-        <div class="col-md-6 col-sm-3 d-md-flex justify-content-around">
-          <div class="">
-            <form class="form-inline my-2 my-md-0 d-md-inline-block d-sm-none">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              My account
+            <button type="button" class="btn btn-success d-none d-md-flex col-md-4">
+              Wishlist <span class="badge badge-dark bg-danger">3</span>
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Login</a>
-              <a class="dropdown-item" href="#">Register</a>
-              <a class="dropdown-item" href="#">My Orders</a>
-              <a class="dropdown-item" href="#">Account Settings</a>
+          </div>
+        </nav>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="row row1 col-4 col-md-4">
+            <a class="navbar-brand col-12">խանութ</a>
+          </div>
+          <div class="row row2 col-8 col-md-8">
+            <form class="form-inline d-none d-md-inline-flex col-md-9 justify-content-end">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            
+            <div class="dropdown col-12 col-md-3 d-flex justify-content-end">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My account
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Log in</a>
+                <a class="dropdown-item" href="#">Register</a>
+                <a class="dropdown-item" href="#">My orders</a>
+                <a class="dropdown-item" href="#">Account settings</a>
+              </div>
             </div>
-          </div>  
-        </div>      
-      </div>
-    </nav>
-    <nav class="navbar navbar-expand-md navbar-light bg-success">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto col-12 d-flex justify-content-around">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory1
+                </a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav w-100 d-flex justify-content-between">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category 1
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Category 1</a>
-          <a class="dropdown-item" href="#">Category 2</a>
-          <a class="dropdown-item" href="#">Category 3</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category 2
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Category 1</a>
-          <a class="dropdown-item" href="#">Category 2</a>
-          <a class="dropdown-item" href="#">Category 3</a>
-        </div>
-      </li> 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category 3
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Category 1</a>
-          <a class="dropdown-item" href="#">Category 2</a>
-          <a class="dropdown-item" href="#">Category 3</a>
-        </div>
-      </li> 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category 4
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Category 1</a>
-          <a class="dropdown-item" href="#">Category 2</a>
-          <a class="dropdown-item" href="#">Category 3</a>
-        </div>
-      </li> 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category 5
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Category 1</a>
-          <a class="dropdown-item" href="#">Category 2</a>
-          <a class="dropdown-item" href="#">Category 3</a>
-        </div>
-      </li> 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category 6
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Category 1</a>
-          <a class="dropdown-item" href="#">Category 2</a>
-          <a class="dropdown-item" href="#">Category 3</a>
-        </div>
-      </li> 
-    </ul>
-  </div>
-</nav>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="about.html">Subcotegory1</a></li>
+         
+            
+          </ul>
+
+                    <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory.html">Subcotegory2</a></li>
+
+       </ul>
+                  
+                    <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory.html">Subcotegory3</a></li>
+
+       </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory2
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory2.html">Subcotegory1</a></li>
+
+       </ul>
+                 <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory3.html">Subcotegory2</a></li>
+
+       </ul>
+                  <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory4.html">Subcotegory3</a></li>
+
+       </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory3
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory5.html">Subcotegory1</a></li>
+
+       </ul>
+       <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory6.html">Subcotegory2</a></li>
+
+       </ul>
+                   <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory7.html">Subcotegory3</a></li>
+
+       </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory4
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory8.html">Subcotegory1</a></li>
+
+       </ul>
+                 <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory9.html">Subcotegory2</a></li>
+
+       </ul>
+                                <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory10.html">Subcotegory3</a></li>
+
+       </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory5
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#"><ul class="nav-menu">
+              <li><a href="Subcotegory11.html">Subcotegory1</a></li>
+
+       </ul>
+               <a class="dropdown-item" href="#"><ul class="nav-menu">
+              <li><a href="Subcotegory12.html">Subcotegory2</a></li>
+
+       </ul>
+              <a class="dropdown-item" href="#"><ul class="nav-menu">
+              <li><a href="Subcotegory13.html">Subcotegory3</a></li>
+
+       </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory6
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory14">Subcotegory1</a></li>
+         
+            
+          </ul>
+             <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href=".......................">Subcotegory2</a></li>
+         
+            
+          </ul>
+                  <a class="dropdown-item" href="#"><ul class="nav-menu">
+            <li><a href="Subcotegory16">Subcotegory3</a></li>
+         
+            
+          </ul>
+                </div>
+              </li>
+            </ul>  
+          </div>
+        </nav>
+      </header>
+      <main>
+         
+               
+  
+   
+
  <div class="main-row1 alert alert-warning mt-3" id="alert" role>
           մենք աշխատում եմք ձեր համար
           <button type="button" class="close my-auto" data-dismiss="alert" aria-label="Close">
@@ -352,15 +411,20 @@
             </div>  
           </div>
            </main>
-           <nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
   </ul>
 </nav>
+  </main>
   <br><br><br><br><br><br><br><br><br><br>
 <footer>
   <div class="container-fluid">
@@ -494,8 +558,22 @@
     </ul>
           </div>
         </div>
-</footer>
 
+    <div class="row align-items-center h-100 bg-dark">
+        <div class="col-auto flex-grow-0 py-3 d-none d-md-block text-danger">
+            <span>find us on: </span>
+        </div>
+        <div class="col-12 col-md-auto text-center mr-auto">
+            <a href="#" class="align-middle p-2 d-inline-block text-danger"><i class="gg-facebook"></i></a>
+            <a href="#" class="align-middle p-2 d-inline-block text-danger"><i class="gg-instagram"></i></a>
+            <a href="#" class="align-middle p-2 d-inline-block text-danger"><i class="gg-twitter"></i></a>
+            <a href="#" class="align-middle p-2 d-inline-block text-danger"><i class="gg-youtube"></i></a>
+        </div>
+        <div class="col-12 col-md-auto text-center text-danger">
+            &copy;Tumo Center For Creative Technologies
+        </div>
+    </div>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
