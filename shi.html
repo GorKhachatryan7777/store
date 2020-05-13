@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    <main class="page payment-page">
+        <section class="payment-form dark">
+            <div class="container">
+            
+                <form>
+                    <div class="card-details">
+                        <h3 class="title">Երկիր</h3>
+                        <div class="row">
+                            <div class="form-group col-sm-5">
+                                <label for="country">Երկիր</label>
+                                <select id="country" class="custom-select">
+                                   
+                                     <option value="1">Հայաստան</option>
+                                   <option value="2">Ռուսաստան</option>
+                                    <option value="3">ԱՄՆ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h3 class="title">Անձնական տեղեկատվություն</h3>
+                        <div class="row">
+                            <div class="form-group col-sm-7">
+                            <div class="input-group expiration-date">
+                                    <input type="text" class="form-control" placeholder=" Անուն" aria-label="MM"
+                                        aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" placeholder=" Ազգանուն" aria-label="YY"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-5">
+                                <label for="company">Ընկերություն</label>
+                                <input id="company" type="text" class="form-control" placeholder="Ընկերություն Անուն"
+                                    aria-label="Card Holder" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <h3 class="title">Փողոցի հասցե</h3>
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <div class="input-group expiration-date">
+                                    <input id="streetAddress1" type="text" class="form-control"
+                                        placeholder="Փողոցի հասցե" aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="title">Քաղաք / նահանգ / փոստային</h3>
+                        <div class="row">
+                            <div class="form-group col-sm-5">
+                                <input id="Քաղաք " type="text" class="form-control"
+                                        placeholder="Քաղաք " aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input id="նահանգ" type="text" class="form-control"
+                                        placeholder="նահանգ" aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <input id="փոստ" type="text" class="form-control"
+                                        placeholder="փոստ " aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                            </div>
+
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <a href="index.html" type="button" class="btn btn-primary btn-block">Proceed</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
